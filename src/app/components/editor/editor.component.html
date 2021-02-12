@@ -1,0 +1,15 @@
+<div class="container pt-5">
+    <form #notes="ngForm" (ngSubmit) = "submit(notes)">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Note title</label>
+            <input type="text" required class="form-control" name="title" [ngModel] = "note.title" id="exampleFormControlInput1" placeholder="Eg: Grocery">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Note</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" name="body" [ngModel] = "note.body" rows="3" placeholder="Eg: Milk, Bread, Eggs"></textarea>
+          </div>
+
+          <button type="button" class="btn btn-danger pull-right" (click)="onCancel()">Cancel</button>
+          <button type="submit" class="btn btn-info pull-right mr-3" [disabled] = "!notes.valid">Save</button>
+    </form>
+</div>

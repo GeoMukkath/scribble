@@ -1,0 +1,18 @@
+<div class="notecard p-3">
+    <a [routerLink] = "noteBody">
+        <div class="cardcontent">
+            <h1 class="card-title">
+                {{ title }}
+            </h1>
+            <div class="card-body pl-0 pt-0">
+                <p>
+                    {{ body }}
+                </p>
+            </div>  
+        </div>
+    </a>
+    
+    <div class="close" title="delete" (click) = "onDelete()">
+        <img  src="../../assets/images/trash-bin.svg">
+    </div>
+</div>

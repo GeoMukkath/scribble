@@ -1,0 +1,56 @@
+.notecard{
+    background-color: white;
+    border-radius: 3px;
+    height: 150px;
+    width: 400px;
+    cursor: pointer;
+    position: relative;
+}
+
+.notecard:hover{
+    box-shadow: 10px 0px 43px -35px rgba(0,0,0,0.75);
+    .close{
+        display: block;
+    }
+}
+
+.card-title{
+    font-size: 22px;
+    font-weight: bolder;
+    color: darkgreen;
+}
+
+.card-body{
+    font-size: 15px;
+    width: 350px;
+    max-height: 80px;
+    overflow: hidden;
+    color: darkgrey;
+}
+
+.close{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    height: 20px;
+    width: 20px;
+    background-position: center;
+    display: none;
+}
+
+img:hover{
+    fill: red !important;
+}
+
+img:active{
+    background-color: red;
+    border-radius: 40%;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}

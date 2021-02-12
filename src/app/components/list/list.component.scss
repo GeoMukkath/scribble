@@ -1,0 +1,43 @@
+.c-position{
+    justify-content: center;
+    margin:auto; 
+    display: flex;
+}
+
+.c-position > input{
+    border: none;
+    border-radius: 3px;
+    height: 30px;
+    width: 250px;
+}
+
+.c-position> input::placeholder{
+    color: grey;
+    padding-left: 5px;
+}
+
+.c-position >input:focus{
+    outline: none;
+}
+
+app-card{
+    justify-content: center;
+    margin:auto; 
+    display: flex;
+}
+
+.btn{
+    justify-content: center;
+    margin:auto; 
+    display: flex;
+    margin-top: 10px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    align-items: center;
+    padding-bottom: 14px;
+    font-size: 40px;
+}
