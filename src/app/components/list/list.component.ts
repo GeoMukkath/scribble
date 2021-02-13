@@ -13,10 +13,11 @@ export class ListComponent implements OnInit {
   constructor(private notesService: NotesService) { }
 
   ngOnInit(): void {
-    this.notes = this.notesService.getNotes();
+    this.notes = this.notesService.getNotes().sort((a, b) => b.lastAccessed.getTime() - a.lastAccessed.getTime());
+    console.log(this.notes)
   }
 
-  deleteNote(id: number){
+  deleteNote(id: string){
     this.notesService.delete(id);
   }
 }

@@ -4,7 +4,13 @@
     </div>
 
     <div class="notes-list">
-        <app-card *ngFor="let n of notes; index as i" [noteBody]="i" [title]="n.title" [body]="n.body" (delete)="deleteNote(i)" class="py-3"></app-card>
+        <app-card *ngFor="let note of notes;" 
+        [id]="note.order" 
+        [title]="note.title" 
+        [body]="note.body" 
+        (deleteEvent)="deleteNote(note.order)" 
+        class="py-3">
+    </app-card>
     </div>
     <button class="btn btn-primary" routerLink = "new">+</button>
 </div>

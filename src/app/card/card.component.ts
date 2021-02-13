@@ -7,17 +7,17 @@ import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class CardComponent implements OnInit {
   
-  @Input('title') title:string;
-  @Input('body') body:string;
-  @Input('noteBody') noteBody: string;
+  @Input() title:string;
+  @Input() body:string;
+  @Input() id: string;
 
-  @Output('delete') deleter: EventEmitter<void> = new EventEmitter<void>();
+  @Output() deleteEvent: EventEmitter<void> = new EventEmitter<void>();
   constructor() { }
 
   ngOnInit(): void {
   }
 
   onDelete(){
-    this.deleter.emit();
+    this.deleteEvent.emit();
   }
 }
