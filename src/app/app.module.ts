@@ -19,7 +19,7 @@ import { FirebaseService } from './services/firebase.service';
     ContainerComponent,
     CardComponent,
     EditorComponent,
-    HomeComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
